@@ -4,6 +4,10 @@ const handleLogin = () => {
   return alert('this is an attempt of logging dude');
 }
 
+const changeScreenEvent = () => {
+  alert('you tried to access to registration page')
+}
+
 const LoginPage = () => {
   return (
     <div className="main-container">
@@ -24,6 +28,12 @@ const LoginPage = () => {
       </form>
     </div>
       <Divider />
+      <br/>
+      <span>Dont have an account? 
+        <span style={{color: "#49b479", fontWeight: "700"}}
+          onClick={changeScreenEvent}> Click here</span>
+      </span>
+      <br/>
       <button onClick={handleLogin}>Sign in</button>
     </div>
   );
