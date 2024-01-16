@@ -1,11 +1,8 @@
 import { Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const handleRegistration = () => {
   return alert('this is an attempt of register dude');
-}
-
-const changeScreenEvent = () => {
-  alert('you tried to access to login page')
 }
 
 const RegistrationPage = () => {
@@ -29,10 +26,9 @@ const RegistrationPage = () => {
     </div>
       <Divider />
       <br/>
-      <span>Dont have an account? 
-        <span style={{color: "#49b479", fontWeight: "700"}}
-          onClick={changeScreenEvent}>Sign up</span>
+      <span>Already have an account? 
       </span>
+      <Link to='/' style={{color: "#49b479", fontWeight: "700"}}> Sign in</Link>
       <br/>
       <button onClick={handleRegistration}>Sign up</button>
     </div>

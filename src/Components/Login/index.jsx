@@ -1,12 +1,10 @@
-import { Button, Divider } from "@mui/material";
+import { Divider } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const handleLogin = () => {
   return alert('this is an attempt of logging dude');
 }
 
-const changeScreenEvent = () => {
-  alert('you tried to access to registration page')
-}
 
 const LoginPage = () => {
   return (
@@ -30,8 +28,9 @@ const LoginPage = () => {
       <Divider />
       <br/>
       <span>Dont have an account? 
-        <span style={{color: "#49b479", fontWeight: "700"}}
-          onClick={changeScreenEvent}> Click here</span>
+      <Link to='/register' style={{color: "#49b479", fontWeight: "700"}}>
+          Sign up
+        </Link>
       </span>
       <br/>
       <button onClick={handleLogin}>Sign in</button>
