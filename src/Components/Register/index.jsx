@@ -17,6 +17,12 @@ const RegistrationPage = () => {
           type="text"
           placeholder="example@mail.com"
         />
+         <input
+          className="task-input"
+          name="fullname"
+          type="text"
+          placeholder="Enter your fullname"
+        />
         <input
           className="task-input"
           type="password" 

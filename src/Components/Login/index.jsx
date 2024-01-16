@@ -28,9 +28,7 @@ const LoginPage = () => {
       <Divider />
       <br/>
       <span>Dont have an account? 
-      <Link to='/register' style={{color: "#49b479", fontWeight: "700"}}>
-          Sign up
-        </Link>
+      <Link to='/register' style={{color: "#49b479", fontWeight: "700"}}> Sign up</Link>
       </span>
       <br/>
       <button onClick={handleLogin}>Sign in</button>
