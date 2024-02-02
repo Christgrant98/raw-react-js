@@ -1,11 +1,14 @@
 import { Divider } from "@mui/material";
 import { Link } from "react-router-dom";
-
-const handleRegistration = () => {
-  return alert('this is an attempt of register dude');
-}
+// import { useForm } from "react-hook-form";
+// todo: we left code in the part of selecting how we are going to hanlde setValues into inputs
 
 const RegistrationPage = () => {
+  
+  const handleRegistration = () => {
+    return alert('this is an attempt of register dude');
+  }
+
   return (
     <div className="main-container">
     <div className="second-container">
@@ -16,6 +19,7 @@ const RegistrationPage = () => {
           name="email"
           type="text"
           placeholder="example@mail.com"
+          onChange= {undefined}
         />
          <input
           className="task-input"
